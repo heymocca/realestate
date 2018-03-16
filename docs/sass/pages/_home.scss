@@ -1,0 +1,100 @@
+/*============================
+        Search Section
+==============================*/
+#search-form {
+    margin-top: -10rem;
+    position: relative;
+    z-index: 999;
+}
+
+.search-box {
+    background: rgba($color-white, .5);
+    padding: 4rem;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.1);
+
+    & select {
+        border: 1px solid $color-dark-light;
+        padding: 1rem 2rem;
+        background: $color-white
+        url(../images/icon/angle-down.png) no-repeat
+        calc(100% - 15px) center;
+        -webkit-appearance: none;
+        width: 100%;
+        color: $color-dark;
+        border-radius: .3rem;
+        margin-bottom: 2.2rem;
+    }
+}
+
+.keyword {
+
+    &__input {
+        font-size: 1.6rem;
+        border: 1px solid $color-dark-light;
+        border-radius: .3rem;
+        padding: .8rem 2rem;
+        width: 100%;
+    }
+}
+
+/*============================
+        Featured Section
+==============================*/
+.property-box {
+    border: 1px solid $color-dark-lighter;
+    margin-bottom: 5rem;
+}
+
+.property-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.property-type-price {
+    position: absolute;
+    left: 2rem;
+    bottom: 1rem;
+
+    .type {
+        background: $color-primary;
+        padding: .3rem 2rem;
+        color: $color-white;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+
+    .price {
+        background: rgba($color-white, .7);
+        padding: .3rem 2rem;
+        color: $color-dark;
+        font-size: 2rem;
+        display: inline-block;
+        font-weight: 700;
+    }
+}
+
+.property-info {
+    padding: 2.5rem;
+
+    &__id {
+        font-size: 1.2rem;
+        color: $color-dark-light;
+    }
+
+    &__stucture {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px dashed $color-dark-lighter;
+    }
+}
+
+
+
+
+
+
+
+
+
+// end with home
