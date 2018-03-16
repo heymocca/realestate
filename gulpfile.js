@@ -46,7 +46,7 @@ gulp.task('fa', function() {
 // Move css, fonts, images, scripts, index to doc
 gulp.task('move-to-doc', function() {
     return gulp.src('src/**/*')
-    .pipe(gulp.dest('doc'));
+    .pipe(gulp.dest('docs'));
 });
 
 gulp.task('default', ['scripts', 'serve', 'fa', 'fonts', 'move-to-doc']);
