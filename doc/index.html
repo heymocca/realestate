@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Bootstrap Projects</title>
+</head>
+<body>
+    <!-- Header Section-->
+    <header id="header">
+        <div class=" header header__navigation ptb-15">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="logo-box">
+                            <img src="images/logo.png" alt="logo" class="logo logo--small">
+                            <h3 class="d-inline heading__tertiary">Trade Property</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-lg-block d-none">
+                        <div class="header__menu-box">
+                            <ul class="d-flex header__menu-item" id="navigation">
+                                <li class="active"><a href="#home">Home</a></li>
+                                <li class="header__menu-item--sub"><a href="#properties">Properties <i class="fa fa-angle-down"></i></a>
+                                    <ul class="header__menu-item--sub-item">
+                                        <li><a href="#">Auckland Center</a></li>
+                                        <li><a href="#">North Shore</a></li>
+                                        <li><a href="#">Southen</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__menu-item--sub"><a href="#">Agents <i class="fa fa-angle-down"></i></a>
+                                    <ul class="header__menu-item--sub-item">
+                                        <li><a href="#">Auckland Center</a></li>
+                                        <li><a href="#">North Shore</a></li>
+                                        <li><a href="#">Southen</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 d-none col-sm-4 d-sm-block p-0">
+                        <div class="login-register">
+                            <ul class="d-flex login-register__item">
+                                <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
+                                <li><a href="#"><i class="fa fa-sign-in"></i> Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Sliders Section-->
+    <section id="slider">
+        <div class="slider-group owl-carousel">
+            <div class="slider-item opacity--dark">
+                <img src="images/slider/1.jpg" alt="">
+            </div>
+            <div class="slider-item opacity--dark">
+                <img src="images/slider/2.jpg" alt="">
+            </div>
+            <div class="slider-item opacity--dark">
+                <img src="images/slider/2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Search Section -->
+    <section id="search-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="search-box">
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <select name="location">
+                                        <option disabled selected>Select a region</option>
+                                        <optgroup label="Auckland">
+                                            <option value="Auckland City">Auckland City</option>
+                                            <option value="Franklin District">Franklin District</option>
+                                            <option value="Manukau City">Manukau City</option>
+                                            <option value="North Shore City">North Shore City</option>
+                                            <option value="Papakura District">Papakura District</option>
+                                            <option value="Rodney District">Rodney District</option>
+                                            <option value="Waiheke %26 Gulf Islands">Waiheke &amp; Gulf Islands</option>
+                                            <option value="Waitakere City">Waitakere City</option>
+                                        </optgroup>
+                                        <optgroup label="Northland">
+                                            <option value="Far North District">Far North District</option>
+                                            <option value="Kaipara District">Kaipara District</option>
+                                            <option value="Whangarei District">Whangarei District</option>
+                                        </optgroup>
+                                        <optgroup label="Other">
+                                            <option value="Hauraki District">Hauraki District</option>
+                                            <option value="Pacific Islands">Pacific Islands</option>
+                                            <option value="Queenstown / Lakes District">Queenstown / Lakes District</option>
+                                            <option value="Rotorua District">Rotorua District</option>
+                                            <option value="Tauranga District">Tauranga District</option>
+                                            <option value="Thames / Coromandel District">Thames / Coromandel District</option>
+                                            <option value="Waikato District">Waikato District</option>
+                                            <option value="Western Bay of Plenty">Western Bay of Plenty</option></optgroup>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <select name="location">
+                                        <option disabled selected>Select a suburb</option>
+                                        <option>Heigh </option>
+                                        <option>Midium</option>
+                                        <option>Normal</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <select name="location">
+                                        <option disabled selected>Property type</option>
+                                        <option>Any Types</option>
+                                        <option>Apartment</option>
+                                        <option>House</option>
+                                        <option>Unit</option>
+                                        <option>Townhouse</option>
+                                        <option>Section</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <select name="location">
+                                        <option disabled selected>Price range</option>
+                                        <option>$100,000 - $300,000</option>
+                                        <option>$300,000 - $500,000</option>
+                                        <option>$500,000 - $700,000</option>
+                                        <option>$700,000 - $900,000</option>
+                                        <option>$900,000 - $1000,000</option>
+                                        <option>$1000,000 - $3000,000</option>
+                                        <option>$3000,000 - more</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <select name="location">
+                                        <option disabled selected>Bedroom</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <select name="location">
+                                        <option disabled selected>Bathroom</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <select name="location">
+                                        <option disabled selected>Baths</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <select name="location">
+                                        <option disabled selected>Stories</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="keyword">
+                                        <input type="text" placeholder="Keywords..." class="keyword__input">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <button class="btn btn--blue btn--large">Search Properties</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature Section-->
+    <section id="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading__secondary text-center">
+                        <h2>Featured Property</h2>
+                        <div class="heading__secondary--underline"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="property-box">
+                        <div class="property-image">
+                            <img src="images/properties/1.jpg" alt="property">
+                            <ul class="property-type-price">
+                                <li><span class="type">For Sale</span></li>
+                                <li><span class="price">$1,750,000</span></li>
+                            </ul>
+                        </div>
+                        <div class="property-info">
+                            <h3 class="heading__tertiary">74 Temple Street, Meadowbank</h3>
+                            <p class="paragraph--medium">Temple street - a great street for a young family</p>
+                            <span class="property-info__id">Property ID: 753916</span>
+                            <div class="row property-info__stucture">
+                                <div class="col-5">
+                                    <span></span>
+                                </div>
+                                <div class="col-7">
+                                    <ul class="d-flex icons">
+                                        <li class="icons--single">4 <i class="fa fa-bed icons--blue icons--large"></i></li>
+                                        <li class="icons--single">2 <i class="fa fa-bath icons--blue icons--large"></i></li>
+                                        <li class="icons--single">1 <i class="fa fa-car icons--blue icons--large"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="property-box">
+                        <div class="property-image">
+                            <img src="images/properties/1.jpg" alt="property">
+                            <ul class="property-type-price">
+                                <li><span class="type">For Sale</span></li>
+                                <li><span class="price">$1,750,000</span></li>
+                            </ul>
+                        </div>
+                        <div class="property-info">
+                            <h3 class="heading__tertiary">74 Temple Street, Meadowbank</h3>
+                            <p class="paragraph--medium">Temple street - a great street for a young family</p>
+                            <span class="property-info__id">Property ID: 753916</span>
+                            <div class="row property-info__stucture">
+                                <div class="col-5">
+                                    <span></span>
+                                </div>
+                                <div class="col-7">
+                                    <ul class="d-flex icons">
+                                        <li class="icons--single">4 <i class="fa fa-bed icons--blue icons--large"></i></li>
+                                        <li class="icons--single">2 <i class="fa fa-bath icons--blue icons--large"></i></li>
+                                        <li class="icons--single">1 <i class="fa fa-car icons--blue icons--large"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="property-box">
+                        <div class="property-image">
+                            <img src="images/properties/1.jpg" alt="property">
+                            <ul class="property-type-price">
+                                <li><span class="type">For Sale</span></li>
+                                <li><span class="price">$1,750,000</span></li>
+                            </ul>
+                        </div>
+                        <div class="property-info">
+                            <h3 class="heading__tertiary">74 Temple Street, Meadowbank</h3>
+                            <p class="paragraph--medium">Temple street - a great street for a young family</p>
+                            <span class="property-info__id">Property ID: 753916</span>
+                            <div class="row property-info__stucture">
+                                <div class="col-5">
+                                    <span></span>
+                                </div>
+                                <div class="col-7">
+                                    <ul class="d-flex icons">
+                                        <li class="icons--single">4 <i class="fa fa-bed icons--blue icons--large"></i></li>
+                                        <li class="icons--single">2 <i class="fa fa-bath icons--blue icons--large"></i></li>
+                                        <li class="icons--single">1 <i class="fa fa-car icons--blue icons--large"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="property-box">
+                        <div class="property-image">
+                            <img src="images/properties/1.jpg" alt="property">
+                            <ul class="property-type-price">
+                                <li><span class="type">For Sale</span></li>
+                                <li><span class="price">$1,750,000</span></li>
+                            </ul>
+                        </div>
+                        <div class="property-info">
+                            <h3 class="heading__tertiary">74 Temple Street, Meadowbank</h3>
+                            <p class="paragraph--medium">Temple street - a great street for a young family</p>
+                            <span class="property-info__id">Property ID: 753916</span>
+                            <div class="row property-info__stucture">
+                                <div class="col-5">
+                                    <span></span>
+                                </div>
+                                <div class="col-7">
+                                    <ul class="d-flex icons">
+                                        <li class="icons--single">4 <i class="fa fa-bed icons--blue icons--large"></i></li>
+                                        <li class="icons--single">2 <i class="fa fa-bath icons--blue icons--large"></i></li>
+                                        <li class="icons--single">1 <i class="fa fa-car icons--blue icons--large"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="property-box">
+                        <div class="property-image">
+                            <img src="images/properties/1.jpg" alt="property">
+                            <ul class="property-type-price">
+                                <li><span class="type">For Sale</span></li>
+                                <li><span class="price">$1,750,000</span></li>
+                            </ul>
+                        </div>
+                        <div class="property-info">
+                            <h3 class="heading__tertiary">74 Temple Street, Meadowbank</h3>
+                            <p class="paragraph--medium">Temple street - a great street for a young family</p>
+                            <span class="property-info__id">Property ID: 753916</span>
+                            <div class="row property-info__stucture">
+                                <div class="col-5">
+                                    <span></span>
+                                </div>
+                                <div class="col-7">
+                                    <ul class="d-flex icons">
+                                        <li class="icons--single">4 <i class="fa fa-bed icons--blue icons--large"></i></li>
+                                        <li class="icons--single">2 <i class="fa fa-bath icons--blue icons--large"></i></li>
+                                        <li class="icons--single">1 <i class="fa fa-car icons--blue icons--large"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="property-box">
+                        <div class="property-image">
+                            <img src="images/properties/1.jpg" alt="property">
+                            <ul class="property-type-price">
+                                <li><span class="type">For Sale</span></li>
+                                <li><span class="price">$1,750,000</span></li>
+                            </ul>
+                        </div>
+                        <div class="property-info">
+                            <h3 class="heading__tertiary">74 Temple Street, Meadowbank</h3>
+                            <p class="paragraph--medium">Temple street - a great street for a young family</p>
+                            <span class="property-info__id">Property ID: 753916</span>
+                            <div class="row property-info__stucture">
+                                <div class="col-5">
+                                    <span></span>
+                                </div>
+                                <div class="col-7">
+                                    <ul class="d-flex icons">
+                                        <li class="icons--single">4 <i class="fa fa-bed icons--blue icons--large"></i></li>
+                                        <li class="icons--single">2 <i class="fa fa-bath icons--blue icons--large"></i></li>
+                                        <li class="icons--single">1 <i class="fa fa-car icons--blue icons--large"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/popper.min.js"></script>
+    <script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+</body>
+</html>

@@ -43,4 +43,10 @@ gulp.task('fa', function() {
     .pipe(gulp.dest('src/css'));
 });
 
-gulp.task('default', ['scripts', 'serve', 'fa', 'fonts']);
+// Move css, fonts, images, scripts, index to doc
+gulp.task('move-to-doc', function() {
+    return gulp.src('src/**/*')
+    .pipe(gulp.dest('doc'));
+});
+
+gulp.task('default', ['scripts', 'serve', 'fa', 'fonts', 'move-to-doc']);
