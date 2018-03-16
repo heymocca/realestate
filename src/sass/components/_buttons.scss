@@ -1,0 +1,18 @@
+.btn {
+    font-size: 1.8rem;
+
+    &--blue {
+        background: $color-primary;
+        color: $color-white;
+
+        &:hover {
+            background: $color-primary-dark;
+            color: $color-hover;
+        }
+    }
+
+    &--large {
+        padding: 1rem 0;
+        width: 100%;
+    }
+}
