@@ -80,6 +80,20 @@ ul {
     padding: 10rem 0;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.floatleft {
+    float: right;
+}
+
+.floatright {
+    float: right;
+}
+
 .opacity--dark {
     position: relative;
     z-index: 1;

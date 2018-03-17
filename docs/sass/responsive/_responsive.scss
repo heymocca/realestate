@@ -1,0 +1,58 @@
+
+/* (1366x768) WXGA Display */
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    // Login & Restister
+    .login-register__item {
+        &>li {
+            margin-right: -20px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .mobile-menu .slicknav_nav {
+        left: 5rem;
+    }
+}
+
+@media(min-width: 576px) and (max-width: 767px) {
+    .slicknav_menu {
+        left: 1rem;
+    }
+
+    .mobile-menu .slicknav_nav {
+        left: -45rem;
+        width: 50rem;
+    }
+}
+
+@media(max-width: 575px) {
+    .slicknav_menu {
+        left: 10rem;
+    }
+
+    .mobile-menu .slicknav_nav {
+        left: -29rem;
+        width: 30rem;
+    }
+
+    .heading__tertiary {
+        font-size: 1.7rem;
+    }
+
+    .logo--small {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+    .mobile-menu .slicknav_nav {
+        width: 40rem;
+    }
+
+}

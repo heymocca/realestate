@@ -8,29 +8,28 @@
 
     &__menu-item {
         justify-content: flex-end;
+        position: relative;
 
         &>li {
+            display: inline-block;
             margin-right: 3rem;
-        }
 
-        &>li a:link,
-        &>li a:visited {
-            color: $color-white;
-            font-size: 1.7rem;
-        }
-
-        &>li a:hover{
-            color: $color-hover;
-        }
-
-        &>li.active>a {
-            color: $color-active;
-        }
-
-        &--sub:hover {
-            .header__menu-item--sub-item {
+            a {
+                color: $color-white;
+                font-size: 1.7rem;
                 display: block;
-                z-index: 2;
+            }
+
+            // i {
+            //     color: $color-white;
+            // }
+
+            & a:hover {
+                color: $color-hover;
+            }
+
+            a:hover .header__menu-item--sub-item {
+                display: block;
             }
         }
 
@@ -39,8 +38,12 @@
             position: absolute;
             background-color: $color-primary-light;
             padding: 1rem;
+            z-index: 2;
+
 
         }
+
+
 
 
     }
@@ -52,7 +55,7 @@
     &__item {
         justify-content: start;
 
-        &>li {
+        &>li:not(:last-child) {
             margin-right: 2rem;
         }
 
@@ -70,9 +73,112 @@
             color: $color-hover;
         }
     }
+}
 
+
+// mobile menu
+.mobile-menu {
+    position: relative;
+    margin: 0 auto;
+    background: red;
+}
+
+.mobile-menu .slicknav_btn {
+    background: transparent;
+    border-radius: 0;
+    display: block;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.slicknav_menu .slicknav_icon {
+    margin: 0 auto;
 
 }
+
+.mobile-menu .slicknav_menu .slicknav_menutxt {
+    display: none;
+}
+
+.mobile-menu .slicknav_menu {
+    background: transparent  none repeat scroll 0 0;
+    font-size: 2rem;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: -.5rem;
+}
+
+.mobile-menu .slicknav_menu .slicknav_icon-bar {
+    display: block;
+    height: 3px;
+    width: 2.5rem;
+    background: #fff;
+}
+
+.mobile-menu .slicknav_nav {
+    background: $color-primary;
+    clear: both;
+    color: #fff;
+    font-size: 15px;
+    margin: 0;
+    padding: 20px 0;
+    position: relative;
+    top: 2.5rem;
+    width: 690px;
+    left: 0;
+    z-index: 9999;
+}
+.slicknav_nav a {
+    color: $color-white;
+    text-transform: capitalize;
+}
+
+.slicknav_nav .slicknav_row, .slicknav_nav a {
+    margin: .2rem 3rem;
+}
+
+.slicknav_nav a i {
+    display: none;
+}
+
+.slicknav_nav a:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.mobile-menu .slicknav_nav .slicknav_row:hover {
+    background: transparent;
+}
+
+.mobile-menu .slicknav_open .slicknav_icon span:first-child {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-44deg);
+    -moz-transform: rotate(-45deg);
+    position: relative;
+    top: 5px;
+}
+.mobile-menu .slicknav_open .slicknav_icon span:last-child {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(44deg);
+    -moz-transform: rotate(45deg);
+}
+.mobile-menu .slicknav_open .slicknav_icon span:nth-child(2) {
+    display: none
+}
+
+.slicknav_btn .slicknav_icon-bar+.slicknav_icon-bar {
+    margin-top: .199rem;
+}
+
+.slicknav_nav li, .slicknav_nav ul {
+    position: relative;
+}
+
+
+
+
 
 
 

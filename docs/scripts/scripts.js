@@ -21,3 +21,19 @@ $('.slider-group').owlCarousel({
         }
     }
 });
+
+// slicknav
+$('#navigation').slicknav({
+	prependTo:'.mobile-menu'
+});
+
+
+
+// navigation
+$(function() {
+    $('.header__menu-item > li').hover(function() {
+        $(this).find('.header__menu-item--sub-item').show(200);
+    }, function() {
+        $(this).find('.header__menu-item--sub-item').hide(200);
+    });
+});

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+
+    <style>
+        .parent {
+            margin:0;
+            padding: 0;
+            list-style: none;
+            background: #e3e3e3;
+            position: relative;
+        }
+
+        .parent li {
+            display: inline-block;
+        }
+
+        .parent .child li {
+            display: block;
+        }
+
+        /* .parent li a {
+            color: #292929;
+             text-decoration: none;
+             padding: 15px;
+             display: block;
+        } */
+
+        .parent li:hover {
+            background: lightgrey;
+        }
+
+        .parent .child {
+            position: absolute;
+            min-width: 200px;
+            background: lightgrey;
+            display: none;
+        }
+
+        .parent li:hover .child {
+            display: block;
+        }
+
+        /* .parent li i {
+          color: #292929;
+          float: right;
+          padding-left: 20px;
+        } */
+
+    </style>
+</head>
+
+<body>
+    <div class="" id="navigation">
+        <ul class="parent">
+            <li>item1</li>
+            <li>item2
+                <ul class="child">
+                    <li>item 2.1</li>
+                    <li>item 2.1</li>
+                </ul>
+            </li>
+            <li>item3
+                <ul class="child">
+                    <li>item 2.1</li>
+                    <li>item 2.1</li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/popper.min.js"></script>
+    <script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.slicknav.min.js"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+
+    <script type="text/javascript">
+        // $('.parent>li').hover(function() {
+        //     $(this).find('.child').show(200);
+        // }, function() {
+        //     $(this).find('.child').hide(200);
+        // });
+
+        $("ul li").click(function() {
+           // $("ul ul").slideUp();
+            $(this).find('ul').slideToggle();
+      });
+    </script>
+
+</body>
+
+</html>
