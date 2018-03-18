@@ -129,6 +129,24 @@ ul {
   width: 5rem;
   height: 4.8rem; }
 
+input,
+button,
+img {
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+
+a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  text-decoration: none; }
+
+div {
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s; }
+
 .btn {
   font-size: 1.8rem; }
   .btn--blue {
@@ -285,6 +303,7 @@ ul {
   background: rgba(255, 255, 255, 0.5);
   padding: 4rem;
   border-radius: 1rem;
+  -webkit-box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.1); }
   .search-box select {
     border: 1px solid #cbc6c6;
@@ -308,11 +327,19 @@ ul {
 ==============================*/
 .property-box {
   border: 1px solid #dfdfdf;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  cursor: pointer; }
+  .property-box:hover {
+    box-shadow: 0 1rem 3rem rgba(203, 198, 198, 0.5);
+    transform: translateY(-5px); }
 
 .property-image {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer; }
+  .property-image img:hover {
+    transform: scale(1.5);
+    zoom: 2; }
 
 .property-type-price {
   position: absolute;

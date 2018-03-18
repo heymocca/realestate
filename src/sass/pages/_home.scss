@@ -11,7 +11,8 @@
     background: rgba($color-white, .5);
     padding: 4rem;
     border-radius: 1rem;
-    box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.1);
 
     & select {
         border: 1px solid $color-dark-light;
@@ -41,14 +42,31 @@
 /*============================
         Featured Section
 ==============================*/
+
+// .properties {
+//     transition: all .3s;
+// }
+
 .property-box {
     border: 1px solid $color-dark-lighter;
     margin-bottom: 5rem;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 1rem 3rem rgba($color-dark-light, .5);
+        transform: translateY(-5px);
+    }
 }
 
 .property-image {
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+
+    img:hover{
+        transform: scale(1.5);
+        zoom: 2;
+    }
 }
 
 .property-type-price {

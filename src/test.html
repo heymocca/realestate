@@ -50,12 +50,27 @@
             display: block;
         }
 
-        /* .parent li i {
-          color: #292929;
-          float: right;
-          padding-left: 20px;
-        } */
+        .img-wrapper {
+            position: relative;
 
+        }
+
+        .img-wrapper img {
+            /* width: 55%; */
+        /* box-shadow: 0 2rem 4rem rgba(0,0,0, .5);
+        border-radius: 4px; */
+        /* position: absolute; */
+        /* z-index: 10; */
+        transition: all .2s;
+        /* outline-offset: 2rem; */
+        }
+
+        .img-wrapper img:hover {
+            /* outline: 1rem solid #34c6d3; */
+            transform: scale(1.15) ;
+            /* box-shadow: 0 2.5rem 4rem rgba(0,0,0, .8); */
+            /* z-index: 20; */
+        }
     </style>
 </head>
 
@@ -75,8 +90,12 @@
                     <li>item 2.1</li>
                 </ul>
             </li>
-
         </ul>
+    </div>
+
+    <br>
+    <div class="img-wrapper">
+        <img src="images/properties/1.jpg" alt="property" >
     </div>
 
 

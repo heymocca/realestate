@@ -21,7 +21,10 @@
     left: -29rem;
     width: 30rem; }
   .heading__tertiary {
-    font-size: 1.7rem; } }
+    font-size: 1.7rem; }
+  .logo--small {
+    width: 4rem;
+    height: 4rem; } }
 
 @media only screen and (min-width: 480px) and (max-width: 575px) {
   .mobile-menu .slicknav_nav {

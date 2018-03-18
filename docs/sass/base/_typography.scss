@@ -155,7 +155,30 @@ ul {
     }
 }
 
+// Transition
+input,
+button,
+img {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
 
+
+a {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    text-decoration: none;
+    color: #363636;
+}
+
+
+div {
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+}
 
 
 
